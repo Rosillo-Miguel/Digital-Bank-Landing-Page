@@ -1,0 +1,101 @@
+*{
+    padding: 0%;
+    margin: 0;
+
+    border-radius: 0;
+}
+
+
+.public-sans-titles {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.public-sans-body {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.public-sans-text {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Public Sans", sans-serif;
+}
+
+nav{
+    background-color: hsl(0, 0%, 100%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 4vh 4vh;
+}
+
+#nav-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    position: relative;
+    margin: 3vh;
+
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(233, 26%, 24%);
+    transform: scaleX(0);
+    transition: transform 0.15s ease, color 0.2s;
+}
+
+a:hover{
+    color: hsl(233, 26%, 24%);
+}
+
+a:hover::before{
+    transform: scaleX(1);
+}
+
+
+button{
+    padding: 10px 25px;
+
+    font-family: "Public Sans", sans-serif;
+    color: hsl(0, 100%, 100%);
+    font-weight: 400;
+
+    border-radius: 24px;
+    border-style: none;
+
+    transition: opacity 0.2s;
+    background-image: linear-gradient(to bottom left,hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+}
+
+button:hover{
+    cursor: pointer;
+    
+    opacity: 70%;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
